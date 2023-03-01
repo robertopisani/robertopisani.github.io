@@ -60,6 +60,6 @@ function valida_envia(){
 
    //Ya Veré cómo hago para guardar estos datos del lado Servidor
 
-  document.fvalida.submit(href="contacto.html");
+  document.fvalida.submit();
 }
 
