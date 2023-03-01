@@ -59,7 +59,7 @@ function valida_envia(){
   alert("Muchas Gracias. Estaremos en contacto muy pronto!");
 
    //Ya Veré cómo hago para guardar estos datos del lado Servidor
-   
-  document.fvalida.submit();
+
+  document.fvalida.submit(href="contacto.html");
 }
 
