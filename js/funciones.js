@@ -27,7 +27,8 @@ $(document).click(function(e) {
 
 // ****  COPIADO DE jQuery  HASTA AQUI  **** 
 
-  
+// Hago validaciones de los campos del formulario
+
 function valida_envia(){
   
   //valido el nombre
@@ -39,27 +40,47 @@ function valida_envia(){
 
     //valido el email y el teléfono
   if (document.fvalida.email.value.length==0 && document.fvalida.telefono.value.length==0){
-      alert("Necesitamos una dirección de mail o un teléfono para contactarlo")
-      document.fvalida.email.focus()
+      alert("Necesitamos una dirección de mail o un teléfono para contactarlo");
+      document.fvalida.email.focus();
       return 0;
       }
+
+      //valido que el formato de mail sea válido
+      
+      if (document.fvalida.email.value.length!=0){
+        // Esta funcion es de stackoverflow.com/
+        expr = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+        if ( !expr.test(document.getElementById("email").value) ){
+        
+            alert("Error: La dirección de correo " + document.getElementById("email").value + " es incorrecta.");
+            document.fvalida.email.focus();
+            return 0;
+           } 
+      }
+      
     
    //valido el mensaje
    if (document.fvalida.mensaje.value.length==0){
     alert("Por favor, indique un breve motivo de contacto.")
-    document.fvalida.nombre.focus()
+    document.fvalida.mensaje.focus()
     return 0;
  }   
     
-  //el formulario se envia
-  var i=document.getElementById("boton").value = "MENSAJE ENVIADO";
-  var i=document.getElementById("boton").style.color = "black";
-  var i=document.getElementById("boton").style.borderColor = "green";
-  var i=document.getElementById("boton").style.backgroundColor = "lightgreen";
-   
+  //envío el formulario
+  document.getElementById("boton").value = "MENSAJE ENVIADO";
+  document.getElementById("boton").style.color = "black";
+  document.getElementById("boton").style.borderColor = "green";
+  document.getElementById("boton").style.backgroundColor = "lightgreen";
+
+  // dejo listo el formulario para un nuevo mensaje
+  document.getElementById("nombre").value=null;
+  document.getElementById("email").value=null;
+  document.getElementById("telefono").value=null;
+  document.getElementById("mensaje").value=null;
+
   alert("Muchas Gracias. Estaremos en contacto muy pronto!");
  
-
+  
   // Ya Veré cómo hago para guardar estos datos del lado Servidor
 
   // document.fvalida.submit();
@@ -73,4 +94,5 @@ function boton_disponible() {
   var i=document.getElementById("boton").style.borderColor = "#0d6efd";
   var i=document.getElementById("boton").style.backgroundColor = "#0d6efd";
 }
+
 
