@@ -27,19 +27,12 @@ $(document).click(function(e) {
 
 // ****  COPIADO DE jQuery  HASTA AQUI  **** 
 
-
-
-function cambiarboton(){
-  var i=document.getElementById("boton").value = "MENSAJE ENVIADO";
-  var i=document.getElementById("boton").style.backgroundColor = "green";
-
-}
   
 function valida_envia(){
   
   //valido el nombre
   if (document.fvalida.nombre.value.length==0){
-         alert("Tiene que escribir su nombre")
+         alert("Por favor, ingrese su nombre completo")
          document.fvalida.nombre.focus()
          return 0;
       }
@@ -51,15 +44,33 @@ function valida_envia(){
       return 0;
       }
     
-    
+   //valido el mensaje
+   if (document.fvalida.mensaje.value.length==0){
+    alert("Por favor, indique un breve motivo de contacto.")
+    document.fvalida.nombre.focus()
+    return 0;
+ }   
     
   //el formulario se envia
   var i=document.getElementById("boton").value = "MENSAJE ENVIADO";
-  var i=document.getElementById("boton").style.backgroundColor = "green";
+  var i=document.getElementById("boton").style.color = "black";
+  var i=document.getElementById("boton").style.borderColor = "green";
+  var i=document.getElementById("boton").style.backgroundColor = "lightgreen";
+   
   alert("Muchas Gracias. Estaremos en contacto muy pronto!");
+ 
 
-   //Ya Veré cómo hago para guardar estos datos del lado Servidor
+  // Ya Veré cómo hago para guardar estos datos del lado Servidor
 
-  document.fvalida.submit();
+  // document.fvalida.submit();
+  
+}
+
+// Dejo Botón en Estado de Disponibilidad de Enviar Mensaje
+function boton_disponible() {
+  var i=document.getElementById("boton").value = "Enviar Mensaje";
+  var i=document.getElementById("boton").style.color = "white";
+  var i=document.getElementById("boton").style.borderColor = "#0d6efd";
+  var i=document.getElementById("boton").style.backgroundColor = "#0d6efd";
 }
 
