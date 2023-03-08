@@ -173,10 +173,6 @@ body.offcanvas-open .desplazamiento {
   opacity: .5;
 }
 
-.offcanvas_menu ul.social li:first-child a {
-  padding-left: 0;
-}
-
 main, aside {
   width: 100%;
 }
@@ -209,7 +205,7 @@ main {
   position: relative;
 }
 
-.home-button {
+.boton-home {
   top: 20px;
   color: #387bf7;
   font-size: 20px;
@@ -217,17 +213,17 @@ main {
 }
 
 @media (min-width: 576px) {
-  .home-button {
+  .boton-home {
     display: block;
   }
 }
 
-.portafolio-list {
+.portafolio-lista {
   padding: 0;
   margin: 0;
 }
 
-.portafolio-list li {
+.portafolio-lista li {
   padding: 0;
   margin: 0 0 20px 0;
   display: block;
@@ -239,17 +235,17 @@ main {
   transition: .3s all ease;
 }
 
-.portafolio-list li:hover {
+.portafolio-lista li:hover {
   -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
 }
 
-.portafolio-list li a {
+.portafolio-lista li a {
   display: block;
   position: relative;
 }
 
-.portafolio-list li a:before {
+.portafolio-lista li a:before {
   position: absolute;
   content: "";
   top: 0;
@@ -264,11 +260,11 @@ main {
   opacity: 0;
 }
 
-.portafolio-list li a img {
+.portafolio-lista li a img {
   max-width: 100%;
 }
 
-.portafolio-list li a .text {
+.portafolio-lista li a .text {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -284,44 +280,22 @@ main {
   transition: .3s all ease;
 }
 
-.portafolio-list li a .text h3 {
+.portafolio-lista li a .text h3 {
   color: #fff;
 }
 
-.portafolio-list li a .text span {
+.portafolio-lista li a .text span {
   color: #fff;
   opacity: .8;
 }
 
-.portafolio-list li a:hover:before {
+.portafolio-lista li a:hover:before {
   visibility: visible;
   opacity: 1;
 }
 
-.portafolio-list li a:hover .text {
+.portafolio-lista li a:hover .text {
   opacity: 1;
   visibility: visible;
-}
-
-.resume-list {
-  padding: 0;
-  margin: 0;
-}
-
-.resume-list li {
-  padding: 0;
-  margin: 0 0 30px 0;
-  display: block;
-  list-style: none;
-}
-
-.resume-list li .fecha {
-  color: #000;
-  opacity: .6;
-}
-
-.resume-list li h3 {
-  color: #000;
-  font-size: 24px;
 }
 
