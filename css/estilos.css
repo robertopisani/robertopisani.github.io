@@ -74,7 +74,7 @@ header {
 }
 
 
-.site-wrap {
+.desplazamiento {
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
@@ -85,7 +85,7 @@ body.offcanvas-open {
   overflow: hidden;
 }
 
-body.offcanvas-open .site-wrap {
+body.offcanvas-open .desplazamiento {
   transform: translateX(-220px);
 }
 
