@@ -216,11 +216,11 @@ main {
   position: absolute;
 }
 
-/* @media (min-width: 576px) {
+@media (min-width: 576px) {
   .home-button {
     display: block;
   }
-} */
+}
 
 .download-button {
   top: 20px;
@@ -230,11 +230,11 @@ main {
   position: absolute;
 }
 
-/* @media (min-width: 576px) {
+@media (min-width: 576px) {
   .download-button {
     display: block;
   }
-} */
+}
 
 .portafolio-list {
   padding: 0;
