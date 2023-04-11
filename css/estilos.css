@@ -216,12 +216,26 @@ main {
   position: absolute;
 }
 
+.download-button {
+  top: 20px;
+  left: 150px;
+  color: #387bf7;
+  font-size: 20px;
+  position: absolute;
+}
+
+
 @media (min-width: 576px) {
   .home-button {
     display: block;
   }
 }
 
+@media (min-width: 576px) {
+  .download-button {
+    display: block;
+  }
+}
 .portafolio-list {
   padding: 0;
   margin: 0;
