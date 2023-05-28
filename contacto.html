@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="es">
+  <head>
+
+    <title>CV Roberto Pisani</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+        <!-- ESTILO DE FUENTES -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="CV Roberto Pisani" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content=" http://www.pisani.com.ar" />
+    <meta property="og:image" content="imagenes/rp_big.img" />
+    <meta property="og:description" content="Hoja de vida CV de Roberto Pisani" />
+
+    <link rel="icon" type="image/x-icon" href="imagenes/rp-logo.jpg">
+
+  </head>
+
+  <body>
+    <div class="desplazamiento">
+
+      <a href="#" class="offcanvas-toggle js-offcanvas-toggle">Menu</a>
+      <div class="offcanvas_menu" id="offcanvas_menu">
+        <ul class="mb-5">
+          <li><a href="index.html">Bio</a></li>
+          <li><a href="portafolio.html">Portafolio</a></li>
+          <li><a href="cv.html">Curriculum Vitae</a></li>
+          <li><a href="educacion.html">Educación y Habilidades</a></li>
+          <li class="active"><a href="contacto.html">Contacto</a></li>
+          <li><a href="download/RP-CV-HT-Ext.pdf" download="RP-CV-HT-Ext.pdf">Descargar CV en PDF</a></li>
+        </ul>
+        <ul class="social">
+          <li><a href="#" class="fa fa-twitter"></a></li>
+          <li><a href="#" class="fa fa-facebook"></a></li>
+          <li><a href="#" class="fa fa-instagram"></a></li>
+        </ul>
+
+      </div>
+      
+      <aside style="background-image: url(imagenes/RP_big.jpg);"></aside>
+      <main>
+
+        <a href="index.html" class="home-button"><span class="fa fa-home"></span></a>
+        <h1 class="mb-5">Contacto</h1>
+        <form name=fvalida action="#" method="post">
+            
+          <div class="row mb-4">
+            <div class="col-md-12">
+              <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre Completo" onfocus="boton_disponible()">
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-md-12">
+              <input type="text" id="email" name="email" class="form-control" placeholder="EMail" onfocus="boton_disponible()">
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-md-12">
+              <input type="text" id="telefono" name="telefono" class="form-control" placeholder="Teléfono" onfocus="boton_disponible()">
+            </div>
+          </div>
+          <div class="row mb-4">
+            <div class="col-md-12">
+              <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Escriba aquí su mensaje..." onfocus="boton_disponible()" cols="30" rows="10"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="d-grid gap-2">
+              <input type="button" class="btn btn-primary btn-block"  id="boton" onclick="valida_envia()" value="Enviar Mensaje">
+            </div>
+          </div>
+        </form>
+        
+      </main>
+    </div>
+
+  <!-- USO DE BIBLIOTECA JQUERY PARA EL MENU -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" 
+      crossorigin="anonymous">
+    </script>
+
+    <script src="js/funciones.js"></script>
+    <script src="https://kit.fontawesome.com/13329506b4.js" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
